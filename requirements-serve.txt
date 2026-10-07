@@ -1,0 +1,12 @@
+# Serving-only dependencies (no PyTorch needed) - enough to run the web demo. Full development stack: requirements.txt
+# Needs Python 3.10 - 3.13 (macOS: Apple Silicon and Intel are both supported by these wheels).
+numpy==2.2.6
+scipy==1.15.3
+scikit-learn==1.7.2
+joblib==1.6.0
+fastapi==0.142.2
+starlette==1.7.0
+pydantic==2.13.5
+uvicorn==0.54.0
+python-multipart==0.0.32
+brukeropus==1.4.3

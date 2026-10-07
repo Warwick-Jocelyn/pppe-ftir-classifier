@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PP/PE FTIR Classifier</title>
+<style>
+:root{
+  --bg:#f6f7f9; --card:#ffffff; --ink:#1b2430; --muted:#657080; --line:#e3e7ee;
+  --pe:#1f6fb5; --pp:#d9620b; --ok:#1f8a4c; --warn:#b7791f; --bad:#c0392b; --accent:#2b59c3;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#12151a; --card:#1b2028; --ink:#e8ecf2; --muted:#93a0b2; --line:#2b3340;
+         --pe:#5aa7ee; --pp:#ff9a52; --ok:#4cc17f; --warn:#e0b04a; --bad:#ef6a5b; --accent:#7ea2ff; }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+header{display:flex;align-items:center;gap:14px;padding:14px 24px;border-bottom:1px solid var(--line);background:var(--card)}
+header h1{font-size:18px;margin:0;font-weight:650}
+header .sub{color:var(--muted);font-size:13px}
+header .spacer{flex:1}
+.pill{font-size:12px;padding:3px 10px;border-radius:99px;border:1px solid var(--line);color:var(--muted);white-space:nowrap}
+main{display:grid;grid-template-columns:340px 1fr;gap:20px;padding:20px 24px;max-width:1500px;margin:auto}
+@media (max-width:950px){ main{grid-template-columns:1fr;padding:16px} }
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+.card h2{font-size:13px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin:0 0 10px;font-weight:600}
+#drop{border:2px dashed var(--line);border-radius:12px;padding:26px 14px;text-align:center;color:var(--muted);cursor:pointer;transition:.15s}
+#drop.over{border-color:var(--accent);background:color-mix(in srgb,var(--accent) 8%,transparent);color:var(--ink)}
+#drop b{color:var(--ink)}
+.row{display:flex;gap:8px}
+.row label{flex:1;font-size:12px;color:var(--muted)}
+input[type=number]{width:100%;padding:7px 8px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);font-size:14px}
+button{font:inherit;padding:7px 12px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer}
+button:hover{border-color:var(--accent)}
+button.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.examples{display:flex;flex-direction:column;gap:6px;margin-top:6px}
+.examples button{text-align:left;font-size:13px;display:flex;justify-content:space-between;gap:8px}
+.examples small{color:var(--muted)}
+.hint{font-size:12px;color:var(--muted);margin-top:8px}
+#banner{padding:12px 24px;font-size:14px;background:color-mix(in srgb,var(--bad) 12%,var(--card));border-bottom:1px solid var(--bad);color:var(--ink)}
+#banner code{background:var(--bg);padding:1px 6px;border-radius:5px}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th{font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);text-align:left;font-weight:600;padding:6px 8px;border-bottom:1px solid var(--line)}
+td{padding:7px 8px;border-bottom:1px solid var(--line)}
+tbody tr{cursor:pointer} tbody tr:hover{background:color-mix(in srgb,var(--accent) 7%,transparent)}
+tbody tr.sel{background:color-mix(in srgb,var(--accent) 13%,transparent)}
+.badge{display:inline-block;min-width:44px;text-align:center;padding:2px 10px;border-radius:7px;font-weight:700;color:#fff}
+.badge.PE{background:var(--pe)} .badge.PP{background:var(--pp)}
+.st{font-size:12px;padding:2px 8px;border-radius:99px;border:1px solid}
+.st.ok{color:var(--ok)} .st.review{color:var(--warn)} .st.unreliable{color:var(--bad)}
+.bar{height:10px;border-radius:99px;background:var(--pe);position:relative;overflow:hidden}
+.bar i{position:absolute;left:0;top:0;bottom:0;background:var(--pp)}
+.bar-lab{display:flex;justify-content:space-between;font-size:12px;color:var(--muted);margin-top:3px}
+.verdict{display:flex;align-items:center;gap:16px;margin-bottom:12px}
+.verdict .big{font-size:40px;font-weight:800;line-height:1}
+.verdict .big.PE{color:var(--pe)} .verdict .big.PP{color:var(--pp)}
+.verdict .big.unrel{color:var(--muted)!important;text-decoration:line-through;opacity:.6}
+.badge.unrel{background:var(--muted)!important;text-decoration:line-through}
+.flag{font-size:13px;padding:6px 10px;border-radius:8px;margin:6px 0;border-left:4px solid}
+.flag.warn{border-color:var(--warn);background:color-mix(in srgb,var(--warn) 10%,transparent)}
+.flag.bad{border-color:var(--bad);background:color-mix(in srgb,var(--bad) 10%,transparent)}
+.flag.info{border-color:var(--accent);background:color-mix(in srgb,var(--accent) 8%,transparent)}
+canvas{width:100%;height:320px;display:block}
+.kpis{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px}
+.kpi{flex:1;min-width:110px;padding:10px 12px;border:1px solid var(--line);border-radius:10px}
+.kpi b{display:block;font-size:22px} .kpi span{font-size:12px;color:var(--muted)}
+.empty{color:var(--muted);text-align:center;padding:50px 10px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px} @media (max-width:1100px){.grid2{grid-template-columns:1fr}}
+.mono{font-variant-numeric:tabular-nums}
+</style>
+</head>
+<body>
+<header>
+  <div><h1>PP / PE FTIR classifier</h1><div class="sub">Polyflow · ATR-FTIR (+ optional colorimeter) · real-time flake identification</div></div>
+  <div class="spacer"></div>
+  <span class="pill" id="modelPill">loading model…</span>
+  <span class="pill" id="latPill">–</span>
+</header>
+<div id="banner" hidden></div>
+<main>
+  <aside style="display:flex;flex-direction:column;gap:16px">
+    <div class="card">
+      <h2>1 · Spectra</h2>
+      <div id="drop"><b>Drop spectra here</b> or click to browse<br><small>.0 (Bruker OPUS) · .dpt · .csv · .txt — many files at once</small></div>
+      <input type="file" id="file" multiple hidden>
+      <div class="hint">Absorbance vs wavenumber (cm⁻¹). Any grid works; spectra are resampled automatically. Transmittance is auto-converted.</div>
+    </div>
+    <div class="card">
+      <h2>2 · Colorimeter (optional, logged only)</h2>
+      <div class="row">
+        <label>L*<input type="number" id="L" step="0.01" min="0" max="100"></label>
+        <label>a*<input type="number" id="a" step="0.01"></label>
+        <label>b*<input type="number" id="b" step="0.01"></label>
+      </div>
+      <div class="hint">L*a*b* is accepted for traceability but is NOT used by the deployed model: in validation, colour added no accuracy beyond FTIR and did not transfer between batches (see report).</div>
+    </div>
+    <div class="card">
+      <h2>Try an example</h2>
+      <div class="examples" id="examples"><div class="hint">loading…</div></div>
+    </div>
+  </aside>
+  <section>
+    <div class="card" id="summaryCard" hidden>
+      <div class="kpis" id="kpis"></div>
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+        <h2 style="margin:0">Results</h2><button id="csvBtn">Download CSV</button>
+      </div>
+      <table><thead><tr><th>File</th><th>Call</th><th>P(PP)</th><th>Status</th><th class="mono">ms</th></tr></thead><tbody id="tbody"></tbody></table>
+    </div>
+    <div class="card" id="detail" style="margin-top:16px" hidden></div>
+    <div class="card empty" id="empty">Upload one or more FTIR spectra to classify them.<br><small>Prediction takes a few milliseconds per spectrum.</small></div>
+  </section>
+</main>
+<script>
+const $=s=>document.querySelector(s);
+let RESULTS=[], SEL=0;
+const BANDS=[[700,740,'PE 720/730'],[1360,1392,'PP 1376'],[2940,2962,'PP 2951']];
+
+const API = new URL('api/', document.baseURI).href;   // relative to the page, so it also works behind a path prefix
+function banner(html){const b=$('#banner'); b.innerHTML=html; b.hidden=false;}
+async function apiJson(path){
+  const r=await fetch(API+path);
+  if(!r.ok) throw new Error(`HTTP ${r.status} from ${API+path}`);
+  return r.json();
+}
+const HOWTO='Open this page from the running service, e.g. <code>http://127.0.0.1:8000</code> (start it with <code>./run_demo.command</code> or <code>./scripts_serve.sh</code>). '
+  +'A saved file, a static preview or a different port will not work.';
+if(location.protocol==='file:') banner('<b>This page was opened as a file, so it cannot reach the classifier.</b> '+HOWTO);
+apiJson('health').catch(e=>banner('<b>Cannot reach the classifier service</b> ('+e.message+'). '+HOWTO));
+
+apiJson('model').then(m=>{
+  $('#modelPill').textContent = (m.info.name||'model') + (m.info.cv_acc?` · CV acc ${(m.info.cv_acc*100).toFixed(1)}%`:'');
+  $('#modelPill').title = JSON.stringify(m.info,null,1);
+}).catch(()=>{$('#modelPill').textContent='model unavailable'});
+
+apiJson('examples').then(ex=>{
+  const el=$('#examples'); el.innerHTML='';
+  ex.forEach(e=>{const b=document.createElement('button');
+    b.innerHTML=`<span>${e.title}</span><small>GT: ${e.truth}</small>`;
+    b.onclick=async()=>{
+      try{ const r=await fetch(API+'example/'+encodeURIComponent(e.file)); if(!r.ok) throw new Error('HTTP '+r.status);
+           run([new File([await r.blob()],e.file)], e.lab); }
+      catch(err){ banner('<b>Could not load the example</b> ('+err.message+'). '+HOWTO); }};
+    el.appendChild(b);});
+  const d=new URLSearchParams(location.search).get('demo');   // ?demo=N auto-runs example N (handy for docs / smoke tests)
+  if(d!==null && el.children[+d]) el.children[+d].click();
+}).catch(err=>{$('#examples').innerHTML='<div class="hint">Examples could not be loaded ('+err.message+').</div>'});
+
+const drop=$('#drop'), fin=$('#file');
+drop.onclick=()=>fin.click();
+fin.onchange=()=>run([...fin.files]);
+['dragenter','dragover'].forEach(ev=>drop.addEventListener(ev,e=>{e.preventDefault();drop.classList.add('over')}));
+['dragleave','drop'].forEach(ev=>drop.addEventListener(ev,e=>{e.preventDefault();drop.classList.remove('over')}));
+drop.addEventListener('drop',e=>run([...e.dataTransfer.files]));
+$('#csvBtn').onclick=()=>{
+  const rows=[['filename','prediction','p_PP','confidence','status','flags','latency_ms','error']];
+  RESULTS.forEach(r=>rows.push([r.filename,r.label||'',r.p_pp?.toFixed(4)||'',r.confidence?.toFixed(4)||'',r.status||'',(r.flags||[]).map(f=>f.msg).join(' | '),r.latency_ms?.toFixed(1)||'',r.error||'']));
+  const csv=rows.map(r=>r.map(v=>`"${String(v).replace(/"/g,'""')}"`).join(',')).join('\n');
+  const a=document.createElement('a'); a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv'})); a.download='pppe_predictions.csv'; a.click();
+};
+
+async function run(files, lab){
+  if(!files.length) return;
+  const fd=new FormData(); files.forEach(f=>fd.append('files',f));
+  const L=lab?lab[0]:$('#L').value, A=lab?lab[1]:$('#a').value, B=lab?lab[2]:$('#b').value;
+  if(L!==''&&L!=null){fd.append('L',L);fd.append('a',A);fd.append('b',B);}
+  const t0=performance.now();
+  let resp; try{ resp=await fetch(API+'predict',{method:'POST',body:fd}); }catch(e){banner('<b>Network error while sending the spectrum</b> ('+e.message+'). '+HOWTO);return;}
+  if(!resp.ok){banner('<b>The service returned an error</b> (HTTP '+resp.status+'): '+(await resp.text()).slice(0,300));return;}
+  $('#banner').hidden=true;
+  const data=await resp.json(); const wall=performance.now()-t0;
+  RESULTS=data.results; SEL=0;
+  $('#latPill').textContent=`${files.length} spectra in ${wall.toFixed(0)} ms (round trip)`;
+  render();
+}
+
+function render(){
+  $('#empty').hidden=true; $('#summaryCard').hidden=false;
+  const ok=RESULTS.filter(r=>!r.error);
+  const pp=ok.filter(r=>r.label==='PP').length, pe=ok.filter(r=>r.label==='PE').length;
+  const rev=ok.filter(r=>r.status!=='ok').length, err=RESULTS.length-ok.length;
+  const med=ok.length?ok.map(r=>r.latency_ms).sort((a,b)=>a-b)[Math.floor(ok.length/2)]:0;
+  $('#kpis').innerHTML=`<div class="kpi"><b>${RESULTS.length}</b><span>spectr${RESULTS.length===1?'um':'a'}</span></div>
+   <div class="kpi"><b style="color:var(--pp)">${pp}</b><span>PP</span></div>
+   <div class="kpi"><b style="color:var(--pe)">${pe}</b><span>PE</span></div>
+   <div class="kpi"><b style="color:var(--warn)">${rev}</b><span>need review</span></div>
+   <div class="kpi"><b style="color:var(--bad)">${err}</b><span>unreadable</span></div>
+   <div class="kpi"><b>${med.toFixed(1)}</b><span>ms / spectrum (server)</span></div>`;
+  $('#tbody').innerHTML=RESULTS.map((r,i)=> r.error
+    ? `<tr data-i="${i}"><td>${esc(r.filename)}</td><td colspan="4" style="color:var(--bad)">${esc(r.error)}</td></tr>`
+    : `<tr data-i="${i}" class="${i===SEL?'sel':''}"><td>${esc(r.filename)}</td><td><span class="badge ${r.status==='unreliable'?'unrel':r.label}">${r.label}</span></td>
+       <td class="mono">${(r.p_pp*100).toFixed(1)}%</td><td><span class="st ${r.status}">${r.status}</span></td><td class="mono">${r.latency_ms.toFixed(1)}</td></tr>`).join('');
+  document.querySelectorAll('#tbody tr').forEach(tr=>tr.onclick=()=>{SEL=+tr.dataset.i;render();});
+  detail();
+}
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+function detail(){
+  const r=RESULTS[SEL], d=$('#detail');
+  if(!r||r.error){d.hidden=true;return;}
+  d.hidden=false;
+  const flags=[...(r.flags||[]).map(f=>`<div class="flag ${f.level}">${esc(f.msg)}</div>`),
+               ...(r.notes||[]).map(n=>`<div class="flag info">${esc(n)}</div>`)].join('');
+  const bh=Object.entries(r.band_heights).map(([k,v])=>`<tr><td>${k}</td><td class="mono">${v.toFixed(3)}</td></tr>`).join('');
+  d.innerHTML=`<h2>${esc(r.filename)}</h2>
+   <div class="grid2"><div>
+     <div class="verdict"><div class="big ${r.status==='unreliable'?'unrel':r.label}">${r.label}</div>
+       <div style="flex:1"><div class="bar"><i style="width:${r.p_pp*100}%"></i></div>
+       <div class="bar-lab"><span>PE ${(r.p_pe*100).toFixed(1)}%</span><span>PP ${(r.p_pp*100).toFixed(1)}%</span></div></div></div>
+     <div>${flags||'<div class="flag info">No quality issues detected.</div>'}</div>
+     <div class="hint">Model: ${esc(r.model)} · FTIR only · ${r.latency_ms.toFixed(1)} ms</div>
+     <table style="margin-top:8px"><thead><tr><th>Diagnostic band</th><th>Peak A</th></tr></thead><tbody>${bh}</tbody></table>
+   </div><div><canvas id="cv"></canvas></div></div>`;
+  chart($('#cv'),r.plot);
+}
+
+function chart(cv,p){
+  if(!p) return;
+  const dpr=window.devicePixelRatio||1, W=cv.clientWidth, H=cv.clientHeight; cv.width=W*dpr; cv.height=H*dpr;
+  const g=cv.getContext('2d'); g.scale(dpr,dpr);
+  const css=getComputedStyle(document.documentElement); const col=n=>css.getPropertyValue(n).trim();
+  const m={l:62,r:14,t:10,b:36}; const x0=600,x1=3200;
+  let ymax=Math.max(...p.y)*1.08, ymin=Math.min(0,Math.min(...p.y));
+  const X=v=>m.l+(x1-v)/(x1-x0)*(W-m.l-m.r), Y=v=>H-m.b-(v-ymin)/(ymax-ymin)*(H-m.t-m.b);
+  g.font='11px system-ui'; g.fillStyle=col('--muted'); g.strokeStyle=col('--line'); g.lineWidth=1;
+  BANDS.forEach(([a,b,n])=>{g.fillStyle=n.startsWith('PE')?col('--pe')+'33':col('--pp')+'33'; g.fillRect(X(b),m.t,X(a)-X(b),H-m.t-m.b);
+    g.fillStyle=n.startsWith('PE')?col('--pe'):col('--pp'); const w=g.measureText(n).width; g.fillText(n, Math.min(X(b)+2, W-m.r-w), m.t+11+(n.startsWith('PE')?14:0));});
+  g.fillStyle=col('--muted');
+  for(let v=600;v<=3200;v+=400){g.beginPath();g.moveTo(X(v),H-m.b);g.lineTo(X(v),H-m.b+4);g.stroke();g.fillText(v,X(v)-10,H-m.b+16);}
+  g.fillText('Wavenumber (cm⁻¹)',W/2-40,H-4); g.save(); g.translate(13,H/2+25); g.rotate(-Math.PI/2); g.fillText('Absorbance',0,0); g.restore();
+  for(let i=0;i<=4;i++){const v=ymin+(ymax-ymin)*i/4; g.fillText(v.toFixed(2),22,Y(v)+4); g.beginPath();g.moveTo(m.l,Y(v));g.lineTo(W-m.r,Y(v));g.globalAlpha=.4;g.stroke();g.globalAlpha=1;}
+  g.strokeStyle=col('--ink'); g.lineWidth=1.4; g.beginPath();
+  p.x.forEach((v,i)=>{const px=X(v),py=Y(p.y[i]); i?g.lineTo(px,py):g.moveTo(px,py);}); g.stroke();
+}
+</script>
+</body>
+</html>

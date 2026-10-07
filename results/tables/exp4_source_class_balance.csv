@@ -1,0 +1,10 @@
+row_0,PE,PP,frac_PP
+Circular 11_Aylesbury_PE_Pallet,10,0,0.0
+Circular 11_Express_Bag_13_PE/PP_Pallet,19,1,0.05
+Circular 11_Express_Bag_17_PE/PP_Pallet,13,0,0.0
+Circular 11_Express_Bag_18_PE/PP_Pallet,11,4,0.27
+Impact_Float_PE,8,16,0.67
+Impact_Float_PP,1,23,0.96
+Impact_Mixed_PO,9,15,0.62
+Impact_Sink_PE,13,11,0.46
+Impact_Sink_PP,14,10,0.42

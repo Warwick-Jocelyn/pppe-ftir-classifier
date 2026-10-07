@@ -1,0 +1,12 @@
+{
+  "n": 178,
+  "auc_PP_score": 0.9982142857142857,
+  "pred_pct_PE_mean": 305.30873585367897,
+  "pred_pct_PE_sd": 52.93004567297979,
+  "pred_pct_PP_mean": 626.2321646949872,
+  "pred_pct_PP_sd": 47.769164865881336,
+  "acc_at_nominal_50pct_(HDPE>=50 -> PE)": 0.550561797752809,
+  "youden_thr_(fit on same data, optimistic)": 458.33422147594337,
+  "acc_at_youden_thr_(optimistic)": 0.9943820224719101,
+  "frac_outside_0_100": 1.0
+}

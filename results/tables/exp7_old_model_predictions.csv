@@ -1,0 +1,179 @@
+sample_id,label,source,colour_name,pred_hdpe_pct
+Float_PP_A1,PP,Impact_Float_PP,black,575.6194995144996
+Float_PP_A2,PP,Impact_Float_PP,red,635.396483063515
+Float_PP_A3,PP,Impact_Float_PP,green,638.0690937693153
+Float_PP_A4,PP,Impact_Float_PP,blue,635.0202612356408
+Float_PP_A5,PP,Impact_Float_PP,orange,602.8817019686493
+Float_PP_A6,PP,Impact_Float_PP,white,615.6219469714995
+Float_PP_B1,PP,Impact_Float_PP,grey,631.4169417583355
+Float_PP_B2,PP,Impact_Float_PP,dark green,639.711309016649
+Float_PP_B3,PP,Impact_Float_PP,yellow,672.6681566790762
+Float_PP_B4,PE,Impact_Float_PP,light blue,263.57964096849537
+Float_PP_B5,PP,Impact_Float_PP,lime green,629.5967891049864
+Float_PP_B6,PP,Impact_Float_PP,brown,596.8113732181596
+Float_PP_C1,PP,Impact_Float_PP,light green,558.625349685723
+Float_PP_C2,PP,Impact_Float_PP,turquoise,635.9721730492515
+Float_PP_C3,PP,Impact_Float_PP,pink,642.0231289893958
+Float_PP_C4,PP,Impact_Float_PP,tan,596.4421389702853
+Float_PP_C5,PP,Impact_Float_PP,red,579.4541046311788
+Float_PP_C6,PP,Impact_Float_PP,light blue,660.4254374668733
+Float_PP_D1,PP,Impact_Float_PP,dark grey,629.5118425628775
+Float_PP_D2,PP,Impact_Float_PP,green,586.0073550447302
+Float_PP_D3,PP,Impact_Float_PP,purple,574.1268157874225
+Float_PP_D4,PP,Impact_Float_PP,light pink,653.0614076512871
+Float_PP_D5,PP,Impact_Float_PP,dark red,601.5304611218627
+Float_PP_D6,PP,Impact_Float_PP,light turquoise,633.5128704280855
+Float_PE_A1,PP,Impact_Float_PE,black,630.001117435637
+Float_PE_A2,PE,Impact_Float_PE,red,254.75045160554282
+Float_PE_A3,PE,Impact_Float_PE,green,255.7253647019882
+Float_PE_A4,PP,Impact_Float_PE,blue,638.8318740098173
+Float_PE_A5,PE,Impact_Float_PE,orange,265.16196827198496
+Float_PE_A6,PP,Impact_Float_PE,white,653.7466410204182
+Float_PE_B1,PP,Impact_Float_PE,light grey,673.5352702086651
+Float_PE_B2,PP,Impact_Float_PE,dark green,613.6868872163473
+Float_PE_B3,PE,Impact_Float_PE,yellow,294.5811743803309
+Float_PE_B4,PE,Impact_Float_PE,light blue,297.68048100217163
+Float_PE_B5,PP,Impact_Float_PE,lime green,651.4840839810847
+Float_PE_B6,PP,Impact_Float_PE,brown,605.2236863919387
+Float_PE_C1,PP,Impact_Float_PE,bright green,604.0999209921157
+Float_PE_C2,PE,Impact_Float_PE,pale yellow,256.46524488279437
+Float_PE_C3,PE,Impact_Float_PE,orange,247.0468413163438
+Float_PE_C4,PE,Impact_Float_PE,light pink,284.6702094361548
+Float_PE_C5,PP,Impact_Float_PE,tan/yellow,655.5802793517402
+Float_PE_C6,PP,Impact_Float_PE,magenta,614.7844379479909
+Float_PE_D1,PP,Impact_Float_PE,dark green,669.8119477604407
+Float_PE_D2,PP,Impact_Float_PE,grey,634.5384250991572
+Float_PE_D3,PP,Impact_Float_PE,light grey,660.5654134258862
+Float_PE_D4,PP,Impact_Float_PE,brown,646.5549121571815
+Float_PE_D5,PP,Impact_Float_PE,purple,657.3695502642347
+Float_PE_D6,PP,Impact_Float_PE,pale green,635.1925868845808
+Sink_PP_A1,PP,Impact_Sink_PP,black,638.1549720350187
+Sink_PP_A2,PE,Impact_Sink_PP,red,255.81706984605904
+Sink_PP_A3,PE,Impact_Sink_PP,green,280.4772870698031
+Sink_PP_A4,PE,Impact_Sink_PP,blue,269.1820263193498
+Sink_PP_A5,PE,Impact_Sink_PP,orange,331.53401603964977
+Sink_PP_A6,PP,Impact_Sink_PP,white,637.556902289405
+Sink_PP_B1,PP,Impact_Sink_PP,light grey,627.2432717021971
+Sink_PP_B2,PE,Impact_Sink_PP,dark green,279.5114686857189
+Sink_PP_B3,PE,Impact_Sink_PP,yellow,294.12394388955346
+Sink_PP_B4,PP,Impact_Sink_PP,light blue,580.3065504260901
+Sink_PP_B5,PE,Impact_Sink_PP,dark blue,246.10610232019604
+Sink_PP_B6,PE,Impact_Sink_PP,pink,267.9168565806711
+Sink_PP_C1,PE,Impact_Sink_PP,grey,254.81070310715603
+Sink_PP_C2,PP,Impact_Sink_PP,lime green,669.1543416485243
+Sink_PP_C3,PP,Impact_Sink_PP,brown,636.979249062524
+Sink_PP_C4,PP,Impact_Sink_PP,purple,652.4854189329825
+Sink_PP_C5,PP,Impact_Sink_PP,pale green,683.4620777013929
+Sink_PP_C6,PP,Impact_Sink_PP,cream,632.6248742540037
+Sink_PP_D1,PE,Impact_Sink_PP,light blue,404.32956428248826
+Sink_PP_D2,PE,Impact_Sink_PP,brown,260.5358447918996
+Sink_PP_D3,PE,Impact_Sink_PP,light grey,259.3519245547284
+Sink_PP_D4,PE,Impact_Sink_PP,dark blue,284.47174065294365
+Sink_PP_D5,PP,Impact_Sink_PP,grey,678.288312354738
+Sink_PP_D6,PE,Impact_Sink_PP,yellow-green,276.5656824955072
+Sink_PE_A1,PP,Impact_Sink_PE,black,649.6988412797266
+Sink_PE_A2,PE,Impact_Sink_PE,red,260.3895658602262
+Sink_PE_A3,PE,Impact_Sink_PE,green,245.7206957180516
+Sink_PE_A4,PE,Impact_Sink_PE,dark blue,252.63176242667427
+Sink_PE_A5,PE,Impact_Sink_PE,orange,249.43418922798224
+Sink_PE_A6,PP,Impact_Sink_PE,white,659.1344623676066
+Sink_PE_B1,PP,Impact_Sink_PE,clear/transparent,658.1144000001891
+Sink_PE_B2,PP,Impact_Sink_PE,dark green,612.9049352358221
+Sink_PE_B3,PE,Impact_Sink_PE,yellow,330.9228874187866
+Sink_PE_B4,PE,Impact_Sink_PE,blue,279.4468847050911
+Sink_PE_B5,PE,Impact_Sink_PE,brown,262.2001784685875
+Sink_PE_B6,PP,Impact_Sink_PE,light green,654.9345996163155
+Sink_PE_C1,PP,Impact_Sink_PE,light blue,691.822818425207
+Sink_PE_C2,PE,Impact_Sink_PE,tan,272.8328770284752
+Sink_PE_C3,PP,Impact_Sink_PE,cream,696.2309149821527
+Sink_PE_C4,PP,Impact_Sink_PE,light grey,609.4987888009839
+Sink_PE_C5,PE,Impact_Sink_PE,turquoise,260.5688844781835
+Sink_PE_C6,PE,Impact_Sink_PE,dark turquoise,271.3143692904717
+Sink_PE_D1,PE,Impact_Sink_PE,red,320.4817850157688
+Sink_PE_D2,PP,Impact_Sink_PE,reddish brown,596.6474944910373
+Sink_PE_D3,PP,Impact_Sink_PE,dark grey,691.9981337983244
+Sink_PE_D4,PE,Impact_Sink_PE,bright green,228.3425702495201
+Sink_PE_D5,PE,Impact_Sink_PE,turquoise,243.7479814472901
+Sink_PE_D6,PP,Impact_Sink_PE,pale yellow,621.176843915224
+Mixed_PO_A1,PP,Impact_Mixed_PO,black,645.0902927033068
+Mixed_PO_A2,PP,Impact_Mixed_PO,red,595.6529056619657
+Mixed_PO_A3,PE,Impact_Mixed_PO,green,320.57053858601324
+Mixed_PO_A4,PE,Impact_Mixed_PO,dark blue,276.0058685862294
+Mixed_PO_A5,PP,Impact_Mixed_PO,orange,632.7636243421067
+Mixed_PO_A6,PP,Impact_Mixed_PO,white,645.1684450790898
+Mixed_PO_B1,PP,Impact_Mixed_PO,clear/ transparent,659.1543154787396
+Mixed_PO_B2,PE,Impact_Mixed_PO,dark green,248.87269982758713
+Mixed_PO_B3,PP,Impact_Mixed_PO,green,655.7047259508678
+Mixed_PO_B4,PE,Impact_Mixed_PO,dark blue,279.3691723598975
+Mixed_PO_B5,PP,Impact_Mixed_PO,orange,632.0843376942589
+Mixed_PO_B6,PE,Impact_Mixed_PO,turquoise,244.5079051001642
+Mixed_PO_C1,PP,Impact_Mixed_PO,grey,559.0149615805223
+Mixed_PO_C2,PE,Impact_Mixed_PO,blue,314.69868626353883
+Mixed_PO_C3,PP,Impact_Mixed_PO,pink,651.3961569681359
+Mixed_PO_C4,PP,Impact_Mixed_PO,lime green,640.294600518473
+Mixed_PO_C5,PP,Impact_Mixed_PO,orange brown,601.9277548324789
+Mixed_PO_C6,PE,Impact_Mixed_PO,light green,292.15985040343304
+Mixed_PO_D1,PE,Impact_Mixed_PO,yellow,290.02579562211093
+Mixed_PO_D2,PP,Impact_Mixed_PO,light blue,619.2860441142413
+Mixed_PO_D3,PP,Impact_Mixed_PO,turquoise green,632.0105161885673
+Mixed_PO_D4,PP,Impact_Mixed_PO,pale pink,643.6376630065074
+Mixed_PO_D5,PE,Impact_Mixed_PO,light pink,271.7836443729257
+Mixed_PO_D6,PP,Impact_Mixed_PO,cream,659.028344581691
+C11_Aylesbury_PE_A1,PE,Circular 11_Aylesbury_PE_Pallet,black,319.3714523655089
+C11_Aylesbury_PE_A2,PE,Circular 11_Aylesbury_PE_Pallet,black,320.63605052845134
+C11_Aylesbury_PE_A3,PE,Circular 11_Aylesbury_PE_Pallet,black,320.8272893289218
+C11_Aylesbury_PE_A4,PE,Circular 11_Aylesbury_PE_Pallet,black,280.8195176354724
+C11_Aylesbury_PE_A5,PE,Circular 11_Aylesbury_PE_Pallet,black,295.2029275682437
+C11_Aylesbury_PE_A6,PE,Circular 11_Aylesbury_PE_Pallet,black,257.1719111959196
+C11_Aylesbury_PE_B1,PE,Circular 11_Aylesbury_PE_Pallet,black,290.0536965247033
+C11_Aylesbury_PE_B2,PE,Circular 11_Aylesbury_PE_Pallet,black,276.79847708263117
+C11_Aylesbury_PE_B3,PE,Circular 11_Aylesbury_PE_Pallet,black,277.9628551679736
+C11_Aylesbury_PE_B4,PE,Circular 11_Aylesbury_PE_Pallet,black,277.5142080267974
+C11_Exp_Bag_13_A1,PE,Circular 11_Express_Bag_13_PE/PP_Pallet,black,422.09851873806275
+C11_Exp_Bag_13_A2,PE,Circular 11_Express_Bag_13_PE/PP_Pallet,black,383.5257099237346
+C11_Exp_Bag_13_A3,PE,Circular 11_Express_Bag_13_PE/PP_Pallet,black,440.3389756334008
+C11_Exp_Bag_13_A4,PP,Circular 11_Express_Bag_13_PE/PP_Pallet,red,374.47850273828914
+C11_Exp_Bag_13_A5,PE,Circular 11_Express_Bag_13_PE/PP_Pallet,red,364.4642557822084
+C11_Exp_Bag_13_A6,PE,Circular 11_Express_Bag_13_PE/PP_Pallet,red,345.5337282983273
+C11_Exp_Bag_13_B1,PE,Circular 11_Express_Bag_13_PE/PP_Pallet,green,336.1923173054339
+C11_Exp_Bag_13_B2,PE,Circular 11_Express_Bag_13_PE/PP_Pallet,green,346.53597977280015
+C11_Exp_Bag_13_B3,PE,Circular 11_Express_Bag_13_PE/PP_Pallet,green,364.1275889387636
+C11_Exp_Bag_13_B4,PE,Circular 11_Express_Bag_13_PE/PP_Pallet,blue,298.86231511903225
+C11_Exp_Bag_13_B5,PE,Circular 11_Express_Bag_13_PE/PP_Pallet,blue,302.97924001957233
+C11_Exp_Bag_13_B6,PE,Circular 11_Express_Bag_13_PE/PP_Pallet,blue,307.23862754780447
+C11_Exp_Bag_13_C3,PE,Circular 11_Express_Bag_13_PE/PP_Pallet,yellow,358.44947307741063
+C11_Exp_Bag_13_C4,PE,Circular 11_Express_Bag_13_PE/PP_Pallet,grey,385.81095597067224
+C11_Exp_Bag_13_C5,PE,Circular 11_Express_Bag_13_PE/PP_Pallet,grey,385.17706566316696
+C11_Exp_Bag_13_C6,PE,Circular 11_Express_Bag_13_PE/PP_Pallet,grey,350.26066849336445
+C11_Exp_Bag_13_D1,PE,Circular 11_Express_Bag_13_PE/PP_Pallet,grey,364.78562422207074
+C11_Exp_Bag_13_D2,PE,Circular 11_Express_Bag_13_PE/PP_Pallet,light brown,401.343386199347
+C11_Exp_Bag_13_D3,PE,Circular 11_Express_Bag_13_PE/PP_Pallet,light brown,386.63348832283566
+C11_Exp_Bag_13_D4,PE,Circular 11_Express_Bag_13_PE/PP_Pallet,light brown,436.3886872021689
+C11_Exp_Bag_17_A1,PE,Circular 11_Express_Bag_17_PE/PP_Pallet,black,375.2216791079746
+C11_Exp_Bag_17_A2,PE,Circular 11_Express_Bag_17_PE/PP_Pallet,black,398.1393565315781
+C11_Exp_Bag_17_A3,PE,Circular 11_Express_Bag_17_PE/PP_Pallet,red,310.92398547131563
+C11_Exp_Bag_17_A5,PE,Circular 11_Express_Bag_17_PE/PP_Pallet,green,360.84482295221017
+C11_Exp_Bag_17_A6,PE,Circular 11_Express_Bag_17_PE/PP_Pallet,green,345.6555232036533
+C11_Exp_Bag_17_B1,PE,Circular 11_Express_Bag_17_PE/PP_Pallet,blue,329.50393953061484
+C11_Exp_Bag_17_B2,PE,Circular 11_Express_Bag_17_PE/PP_Pallet,blue,344.3071593314753
+C11_Exp_Bag_17_B3,PE,Circular 11_Express_Bag_17_PE/PP_Pallet,yellow,297.0305326376207
+C11_Exp_Bag_17_B4,PE,Circular 11_Express_Bag_17_PE/PP_Pallet,yellow,416.16227562115085
+C11_Exp_Bag_17_B5,PE,Circular 11_Express_Bag_17_PE/PP_Pallet,grey,369.00901689358085
+C11_Exp_Bag_17_B6,PE,Circular 11_Express_Bag_17_PE/PP_Pallet,grey,345.476523255286
+C11_Exp_Bag_17_C1,PE,Circular 11_Express_Bag_17_PE/PP_Pallet,light brown,387.0884863656077
+C11_Exp_Bag_17_C2,PE,Circular 11_Express_Bag_17_PE/PP_Pallet,light brown,410.4207298861351
+C11_Exp_Bag_18_A1,PE,Circular 11_Express_Bag_18_PE/PP_Pallet,black,250.89843308025462
+C11_Exp_Bag_18_A2,PE,Circular 11_Express_Bag_18_PE/PP_Pallet,black,240.72962184248442
+C11_Exp_Bag_18_A3,PE,Circular 11_Express_Bag_18_PE/PP_Pallet,red,241.40165760702877
+C11_Exp_Bag_18_A4,PE,Circular 11_Express_Bag_18_PE/PP_Pallet,blue,303.51681098160884
+C11_Exp_Bag_18_A5,PE,Circular 11_Express_Bag_18_PE/PP_Pallet,blue,282.31424855560124
+C11_Exp_Bag_18_A6,PE,Circular 11_Express_Bag_18_PE/PP_Pallet,light blue,311.98247701980085
+C11_Exp_Bag_18_B1,PE,Circular 11_Express_Bag_18_PE/PP_Pallet,light blue,316.2487282687949
+C11_Exp_Bag_18_B2,PP,Circular 11_Express_Bag_18_PE/PP_Pallet,sky blue,490.9094830884971
+C11_Exp_Bag_18_B3,PP,Circular 11_Express_Bag_18_PE/PP_Pallet,sky blue,458.33422147594337
+C11_Exp_Bag_18_B4,PE,Circular 11_Express_Bag_18_PE/PP_Pallet,yellow,242.5167036690011
+C11_Exp_Bag_18_B5,PE,Circular 11_Express_Bag_18_PE/PP_Pallet,yellow,233.36800994100554
+C11_Exp_Bag_18_B6,PP,Circular 11_Express_Bag_18_PE/PP_Pallet,lime green,624.1178815570396
+C11_Exp_Bag_18_C1,PP,Circular 11_Express_Bag_18_PE/PP_Pallet,lime green,631.586518882255
+C11_Exp_Bag_18_C2,PE,Circular 11_Express_Bag_18_PE/PP_Pallet,cream,266.1510953878102
+C11_Exp_Bag_18_C3,PE,Circular 11_Express_Bag_18_PE/PP_Pallet,cream,243.81490520560257

@@ -1,0 +1,4 @@
+system,n,acc,errors,black_acc
+Polymerflow library match,178,1.0,0,1.0
+OpenSpecy library match,178,1.0,0,1.0
+"This model (FTIR, aug RBF-SVM) - CV",178,0.9943820224719101,1,1.0

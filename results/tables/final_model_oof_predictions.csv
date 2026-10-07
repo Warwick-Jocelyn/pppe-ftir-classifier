@@ -1,0 +1,179 @@
+sample_id,source,colour_name,is_black,label,pf_id,pf_score,os_id,os_score,p_pp_oof,pred,correct
+Float_PP_A1,Impact_Float_PP,black,True,PP,PP,95.0,PP,0.96,0.9994246087946248,PP,True
+Float_PP_A2,Impact_Float_PP,red,False,PP,PP,99.0,PP,0.96,0.9999981465876651,PP,True
+Float_PP_A3,Impact_Float_PP,green,False,PP,PP,98.0,PP,0.96,0.9999996068597458,PP,True
+Float_PP_A4,Impact_Float_PP,blue,False,PP,PP,99.0,PP,0.97,0.99999892774783,PP,True
+Float_PP_A5,Impact_Float_PP,orange,False,PP,PP,92.0,PP,0.94,0.9999987786577144,PP,True
+Float_PP_A6,Impact_Float_PP,white,False,PP,PP,90.0,PP,0.95,0.9999988425576586,PP,True
+Float_PP_B1,Impact_Float_PP,grey,False,PP,PP,98.0,PP,0.95,0.9999997919677398,PP,True
+Float_PP_B2,Impact_Float_PP,dark green,False,PP,PP,98.0,PP,0.96,0.9999988892147498,PP,True
+Float_PP_B3,Impact_Float_PP,yellow,False,PP,PP,98.0,PP,0.96,0.999999990961048,PP,True
+Float_PP_B4,Impact_Float_PP,light blue,False,PE,PE,99.0,PE,0.98,3.0694459761305414e-07,PE,True
+Float_PP_B5,Impact_Float_PP,lime green,False,PP,PP,98.0,PP,0.95,0.999998964897529,PP,True
+Float_PP_B6,Impact_Float_PP,brown,False,PP,PP,86.0,PP,0.92,0.9999998469704472,PP,True
+Float_PP_C1,Impact_Float_PP,light green,False,PP,PP,95.0,PP,0.93,0.9999912002471228,PP,True
+Float_PP_C2,Impact_Float_PP,turquoise,False,PP,PP,98.0,PP,0.96,0.9999996332811684,PP,True
+Float_PP_C3,Impact_Float_PP,pink,False,PP,PP,99.0,PP,0.97,0.9999996876888343,PP,True
+Float_PP_C4,Impact_Float_PP,tan,False,PP,PP,89.0,PP,0.88,0.9999979992081623,PP,True
+Float_PP_C5,Impact_Float_PP,red,False,PP,PP,94.0,PP,0.93,0.9992438076988034,PP,True
+Float_PP_C6,Impact_Float_PP,light blue,False,PP,PP,99.0,PP,0.97,0.9999999690422623,PP,True
+Float_PP_D1,Impact_Float_PP,dark grey,False,PP,PP,98.0,PP,0.96,0.9999992829236171,PP,True
+Float_PP_D2,Impact_Float_PP,green,False,PP,PP,94.0,PP,0.94,0.9999463881652882,PP,True
+Float_PP_D3,Impact_Float_PP,purple,False,PP,PP,92.0,PP,0.92,0.9998913437052332,PP,True
+Float_PP_D4,Impact_Float_PP,light pink,False,PP,PP,99.0,PP,0.97,0.9999999692288775,PP,True
+Float_PP_D5,Impact_Float_PP,dark red,False,PP,PP,96.0,PP,0.95,0.9999795866365269,PP,True
+Float_PP_D6,Impact_Float_PP,light turquoise,False,PP,PP,99.0,PP,0.97,0.9999998953216842,PP,True
+Float_PE_A1,Impact_Float_PE,black,True,PP,PP,96.0,PP,0.95,0.9999985970100234,PP,True
+Float_PE_A2,Impact_Float_PE,red,False,PE,PE,99.0,PE,0.98,8.863092985803318e-08,PE,True
+Float_PE_A3,Impact_Float_PE,green,False,PE,PE,99.0,PE,0.98,2.91919144712038e-07,PE,True
+Float_PE_A4,Impact_Float_PE,blue,False,PP,PP,99.0,PP,0.96,0.9999994971728852,PP,True
+Float_PE_A5,Impact_Float_PE,orange,False,PE,PE,98.0,PE,0.98,2.66711408696991e-06,PE,True
+Float_PE_A6,Impact_Float_PE,white,False,PP,PP,96.0,PP,0.96,0.9999996409844462,PP,True
+Float_PE_B1,Impact_Float_PE,light grey,False,PP,PP,99.0,PP,0.97,0.9999999706607887,PP,True
+Float_PE_B2,Impact_Float_PE,dark green,False,PP,PP,99.0,PP,0.96,0.9999939059727954,PP,True
+Float_PE_B3,Impact_Float_PE,yellow,False,PE,PE,99.0,PE,0.98,2.1116382464494152e-07,PE,True
+Float_PE_B4,Impact_Float_PE,light blue,False,PE,PE,99.0,PE,0.98,1.2885899360472953e-06,PE,True
+Float_PE_B5,Impact_Float_PE,lime green,False,PP,PP,98.0,PP,0.96,0.9999997269921443,PP,True
+Float_PE_B6,Impact_Float_PE,brown,False,PP,PP,97.0,PP,0.95,0.9999934457050645,PP,True
+Float_PE_C1,Impact_Float_PE,bright green,False,PP,PP,97.0,PP,0.95,0.9999959531108307,PP,True
+Float_PE_C2,Impact_Float_PE,pale yellow,False,PE,PE,99.0,PE,0.98,5.969261148824774e-07,PE,True
+Float_PE_C3,Impact_Float_PE,orange,False,PE,PE,99.0,PE,0.98,8.384010976270738e-07,PE,True
+Float_PE_C4,Impact_Float_PE,light pink,False,PE,PE,98.0,PE,0.98,7.924145053669841e-07,PE,True
+Float_PE_C5,Impact_Float_PE,tan/yellow,False,PP,PP,99.0,PP,0.97,0.9999999838244327,PP,True
+Float_PE_C6,Impact_Float_PE,magenta,False,PP,PP,99.0,PP,0.96,0.9999956733456612,PP,True
+Float_PE_D1,Impact_Float_PE,dark green,False,PP,PP,97.0,PP,0.94,0.9999999415394736,PP,True
+Float_PE_D2,Impact_Float_PE,grey,False,PP,PP,97.0,PP,0.96,0.999997923251353,PP,True
+Float_PE_D3,Impact_Float_PE,light grey,False,PP,PP,98.0,PP,0.96,0.9999999086221252,PP,True
+Float_PE_D4,Impact_Float_PE,brown,False,PP,PP,98.0,PP,0.96,0.9999997726887757,PP,True
+Float_PE_D5,Impact_Float_PE,purple,False,PP,PP,98.0,PP,0.96,0.9999998360458013,PP,True
+Float_PE_D6,Impact_Float_PE,pale green,False,PP,PP,95.0,PP,0.93,0.9999992289284168,PP,True
+Sink_PP_A1,Impact_Sink_PP,black,True,PP,PP,95.0,PP,0.96,0.9999978152278647,PP,True
+Sink_PP_A2,Impact_Sink_PP,red,False,PE,PE,99.0,PE,0.98,4.6464560799019747e-07,PE,True
+Sink_PP_A3,Impact_Sink_PP,green,False,PE,PE,96.0,PE,0.96,4.577689443518349e-06,PE,True
+Sink_PP_A4,Impact_Sink_PP,blue,False,PE,PE,99.0,PE,0.98,1.3688098907660382e-06,PE,True
+Sink_PP_A5,Impact_Sink_PP,orange,False,PE,PE,95.0,PE,0.96,1.9250548973953983e-05,PE,True
+Sink_PP_A6,Impact_Sink_PP,white,False,PP,PP,96.0,PP,0.95,0.9999981401993541,PP,True
+Sink_PP_B1,Impact_Sink_PP,light grey,False,PP,PP,94.0,PP,0.91,0.9999984550084078,PP,True
+Sink_PP_B2,Impact_Sink_PP,dark green,False,PE,PE,94.0,PE,0.98,1.1937927156304499e-06,PE,True
+Sink_PP_B3,Impact_Sink_PP,yellow,False,PE,PE,98.0,PE,0.98,2.4095857089914656e-06,PE,True
+Sink_PP_B4,Impact_Sink_PP,light blue,False,PP,PP,84.0,PP,0.84,0.9999992974998821,PP,True
+Sink_PP_B5,Impact_Sink_PP,dark blue,False,PE,PE,99.0,PE,0.98,1.053096753124526e-06,PE,True
+Sink_PP_B6,Impact_Sink_PP,pink,False,PE,PE,99.0,PE,0.98,7.419888850215464e-07,PE,True
+Sink_PP_C1,Impact_Sink_PP,grey,False,PE,PE,99.0,PE,0.98,4.0260597203989406e-07,PE,True
+Sink_PP_C2,Impact_Sink_PP,lime green,False,PP,PP,99.0,PP,0.97,0.9999999439797527,PP,True
+Sink_PP_C3,Impact_Sink_PP,brown,False,PP,PP,94.0,PP,0.94,0.9999998276060846,PP,True
+Sink_PP_C4,Impact_Sink_PP,purple,False,PP,PP,98.0,PP,0.97,0.9999998588377667,PP,True
+Sink_PP_C5,Impact_Sink_PP,pale green,False,PP,PP,97.0,PP,0.94,0.9999998931514362,PP,True
+Sink_PP_C6,Impact_Sink_PP,cream,False,PP,PP,95.0,PP,0.93,0.9999983088689325,PP,True
+Sink_PP_D1,Impact_Sink_PP,light blue,False,PE,PE,93.0,PE,0.94,0.002126105126923237,PE,True
+Sink_PP_D2,Impact_Sink_PP,brown,False,PE,PE,97.0,PE,0.97,2.5145122169937273e-06,PE,True
+Sink_PP_D3,Impact_Sink_PP,light grey,False,PE,PE,97.0,PE,0.97,2.6515748023820983e-06,PE,True
+Sink_PP_D4,Impact_Sink_PP,dark blue,False,PE,PE,99.0,PE,0.98,3.893508851708836e-07,PE,True
+Sink_PP_D5,Impact_Sink_PP,grey,False,PP,PP,97.0,PP,0.96,0.9999999290187043,PP,True
+Sink_PP_D6,Impact_Sink_PP,yellow-green,False,PE,PE,98.0,PE,0.98,3.013154643777817e-06,PE,True
+Sink_PE_A1,Impact_Sink_PE,black,True,PP,PP,83.0,PP,0.89,0.9999996752099385,PP,True
+Sink_PE_A2,Impact_Sink_PE,red,False,PE,PE,95.0,PE,0.96,2.503942613157197e-06,PE,True
+Sink_PE_A3,Impact_Sink_PE,green,False,PE,PE,99.0,PE,0.98,7.687345453238198e-07,PE,True
+Sink_PE_A4,Impact_Sink_PE,dark blue,False,PE,PE,98.0,PE,0.98,8.506030904031897e-06,PE,True
+Sink_PE_A5,Impact_Sink_PE,orange,False,PE,PE,97.0,PE,0.98,1.5502511701180416e-06,PE,True
+Sink_PE_A6,Impact_Sink_PE,white,False,PP,PP,88.0,PP,0.95,0.9999999939455284,PP,True
+Sink_PE_B1,Impact_Sink_PE,clear/transparent,False,PP,PP,99.0,PP,0.97,0.9999999120671728,PP,True
+Sink_PE_B2,Impact_Sink_PE,dark green,False,PP,PP,91.0,PP,0.94,0.99999458724492,PP,True
+Sink_PE_B3,Impact_Sink_PE,yellow,False,PE,PE,94.0,PE,0.94,1.0205146491488144e-05,PE,True
+Sink_PE_B4,Impact_Sink_PE,blue,False,PE,PE,99.0,PE,0.98,3.6784559652966913e-06,PE,True
+Sink_PE_B5,Impact_Sink_PE,brown,False,PE,PE,99.0,PE,0.98,5.780625558913764e-07,PE,True
+Sink_PE_B6,Impact_Sink_PE,light green,False,PP,PP,96.0,PP,0.95,0.9999948525526674,PP,True
+Sink_PE_C1,Impact_Sink_PE,light blue,False,PP,PP,95.0,PP,0.95,0.9999992428962494,PP,True
+Sink_PE_C2,Impact_Sink_PE,tan,False,PE,PE,99.0,PE,0.98,2.869542919085042e-07,PE,True
+Sink_PE_C3,Impact_Sink_PE,cream,False,PP,PP,95.0,PP,0.95,0.9999955412569517,PP,True
+Sink_PE_C4,Impact_Sink_PE,light grey,False,PP,PP,95.0,PP,0.95,0.9999960638815784,PP,True
+Sink_PE_C5,Impact_Sink_PE,turquoise,False,PE,PE,99.0,PE,0.98,1.4867123113849944e-06,PE,True
+Sink_PE_C6,Impact_Sink_PE,dark turquoise,False,PE,PE,99.0,PE,0.98,4.929586081604199e-06,PE,True
+Sink_PE_D1,Impact_Sink_PE,red,False,PE,PE,99.0,PE,0.98,1.3854175411503002e-06,PE,True
+Sink_PE_D2,Impact_Sink_PE,reddish brown,False,PP,PP,96.0,PP,0.95,0.9981825331587537,PP,True
+Sink_PE_D3,Impact_Sink_PE,dark grey,False,PP,PP,97.0,PP,0.95,0.9999998949133351,PP,True
+Sink_PE_D4,Impact_Sink_PE,bright green,False,PE,PE,98.0,PE,0.98,1.3506805927952519e-06,PE,True
+Sink_PE_D5,Impact_Sink_PE,turquoise,False,PE,PE,98.0,PE,0.98,3.581680023041592e-06,PE,True
+Sink_PE_D6,Impact_Sink_PE,pale yellow,False,PP,PP,93.0,PP,0.94,0.9999989928549102,PP,True
+Mixed_PO_A1,Impact_Mixed_PO,black,True,PP,PP,98.0,PP,0.97,0.9999997766585876,PP,True
+Mixed_PO_A2,Impact_Mixed_PO,red,False,PP,PP,97.0,PP,0.97,0.9999922505859902,PP,True
+Mixed_PO_A3,Impact_Mixed_PO,green,False,PE,PE,97.0,PE,0.97,1.1599432465578151e-05,PE,True
+Mixed_PO_A4,Impact_Mixed_PO,dark blue,False,PE,PE,98.0,PE,0.98,1.2012408264007499e-05,PE,True
+Mixed_PO_A5,Impact_Mixed_PO,orange,False,PP,PP,95.0,PP,0.95,0.9999990770867623,PP,True
+Mixed_PO_A6,Impact_Mixed_PO,white,False,PP,PP,97.0,PP,0.95,0.9999996065979359,PP,True
+Mixed_PO_B1,Impact_Mixed_PO,clear/ transparent,False,PP,PP,99.0,PP,0.97,0.9999999123714218,PP,True
+Mixed_PO_B2,Impact_Mixed_PO,dark green,False,PE,PE,99.0,PE,0.98,3.4109595560699614e-06,PE,True
+Mixed_PO_B3,Impact_Mixed_PO,green,False,PP,PP,98.0,PP,0.96,0.9999990763584172,PP,True
+Mixed_PO_B4,Impact_Mixed_PO,dark blue,False,PE,PE,99.0,PE,0.98,1.4543267082670548e-06,PE,True
+Mixed_PO_B5,Impact_Mixed_PO,orange,False,PP,PP,98.0,PP,0.96,0.9999993327422739,PP,True
+Mixed_PO_B6,Impact_Mixed_PO,turquoise,False,PE,PE,99.0,PE,0.98,4.1626863936014654e-07,PE,True
+Mixed_PO_C1,Impact_Mixed_PO,grey,False,PP,PP,89.0,PP,0.94,0.999905982463188,PP,True
+Mixed_PO_C2,Impact_Mixed_PO,blue,False,PE,PE,98.0,PE,0.98,3.0407604868153643e-06,PE,True
+Mixed_PO_C3,Impact_Mixed_PO,pink,False,PP,PP,97.0,PP,0.96,0.9999998457190408,PP,True
+Mixed_PO_C4,Impact_Mixed_PO,lime green,False,PP,PP,98.0,PP,0.96,0.9999996633053119,PP,True
+Mixed_PO_C5,Impact_Mixed_PO,orange brown,False,PP,PP,91.0,PP,0.96,0.9999770234335259,PP,True
+Mixed_PO_C6,Impact_Mixed_PO,light green,False,PE,PE,99.0,PE,0.98,6.015812709285252e-07,PE,True
+Mixed_PO_D1,Impact_Mixed_PO,yellow,False,PE,PE,98.0,PE,0.98,5.7621287803558335e-06,PE,True
+Mixed_PO_D2,Impact_Mixed_PO,light blue,False,PP,PP,92.0,PP,0.94,0.9999991850504676,PP,True
+Mixed_PO_D3,Impact_Mixed_PO,turquoise green,False,PP,PP,98.0,PP,0.96,0.9999992833642419,PP,True
+Mixed_PO_D4,Impact_Mixed_PO,pale pink,False,PP,PP,98.0,PP,0.97,0.9999993004837918,PP,True
+Mixed_PO_D5,Impact_Mixed_PO,light pink,False,PE,PE,98.0,PE,0.98,9.155751216177516e-07,PE,True
+Mixed_PO_D6,Impact_Mixed_PO,cream,False,PP,PP,98.0,PP,0.96,0.9999995296252667,PP,True
+C11_Aylesbury_PE_A1,Circular 11_Aylesbury_PE_Pallet,black,True,PE,PE,90.0,PE,0.98,1.65201989962338e-05,PE,True
+C11_Aylesbury_PE_A2,Circular 11_Aylesbury_PE_Pallet,black,True,PE,PE,87.0,PE,0.98,8.879670000133962e-06,PE,True
+C11_Aylesbury_PE_A3,Circular 11_Aylesbury_PE_Pallet,black,True,PE,PE,92.0,PE,0.98,3.226698664097334e-06,PE,True
+C11_Aylesbury_PE_A4,Circular 11_Aylesbury_PE_Pallet,black,True,PE,PE,94.0,PE,0.98,5.008290760012279e-07,PE,True
+C11_Aylesbury_PE_A5,Circular 11_Aylesbury_PE_Pallet,black,True,PE,PE,92.0,PE,0.98,2.2657062300869608e-06,PE,True
+C11_Aylesbury_PE_A6,Circular 11_Aylesbury_PE_Pallet,black,True,PE,PE,94.0,PE,0.98,9.97193805117986e-07,PE,True
+C11_Aylesbury_PE_B1,Circular 11_Aylesbury_PE_Pallet,black,True,PE,PE,90.0,PE,0.98,1.411197860863755e-06,PE,True
+C11_Aylesbury_PE_B2,Circular 11_Aylesbury_PE_Pallet,black,True,PE,PE,93.0,PE,0.98,1.9672564204627088e-06,PE,True
+C11_Aylesbury_PE_B3,Circular 11_Aylesbury_PE_Pallet,black,True,PE,PE,95.0,PE,0.98,1.5784310042958904e-06,PE,True
+C11_Aylesbury_PE_B4,Circular 11_Aylesbury_PE_Pallet,black,True,PE,PE,95.0,PE,0.98,1.2362123745543353e-06,PE,True
+C11_Exp_Bag_13_A1,Circular 11_Express_Bag_13_PE/PP_Pallet,black,True,PE,PE,88.0,PE,0.96,0.00023989352588030857,PE,True
+C11_Exp_Bag_13_A2,Circular 11_Express_Bag_13_PE/PP_Pallet,black,True,PE,PE,88.0,PE,0.97,5.17908191998578e-05,PE,True
+C11_Exp_Bag_13_A3,Circular 11_Express_Bag_13_PE/PP_Pallet,black,True,PE,PE,88.0,PE,0.95,0.0019827054262516004,PE,True
+C11_Exp_Bag_13_A4,Circular 11_Express_Bag_13_PE/PP_Pallet,red,False,PP,PP,84.0,PP,0.82,1.914049501721811e-05,PE,False
+C11_Exp_Bag_13_A5,Circular 11_Express_Bag_13_PE/PP_Pallet,red,False,PE,PE,84.0,PE,0.84,0.01158134237827341,PE,True
+C11_Exp_Bag_13_A6,Circular 11_Express_Bag_13_PE/PP_Pallet,red,False,PE,PE,84.0,PE,0.84,0.006876354733034865,PE,True
+C11_Exp_Bag_13_B1,Circular 11_Express_Bag_13_PE/PP_Pallet,green,False,PE,PE,91.0,PE,0.98,4.657721196959701e-06,PE,True
+C11_Exp_Bag_13_B2,Circular 11_Express_Bag_13_PE/PP_Pallet,green,False,PE,PE,91.0,PE,0.98,3.982700194409036e-05,PE,True
+C11_Exp_Bag_13_B3,Circular 11_Express_Bag_13_PE/PP_Pallet,green,False,PE,PE,92.0,PE,0.98,3.733551222525871e-05,PE,True
+C11_Exp_Bag_13_B4,Circular 11_Express_Bag_13_PE/PP_Pallet,blue,False,PE,PE,89.0,PE,0.95,2.7263480761232945e-06,PE,True
+C11_Exp_Bag_13_B5,Circular 11_Express_Bag_13_PE/PP_Pallet,blue,False,PE,PE,89.0,PE,0.94,7.739167373967918e-06,PE,True
+C11_Exp_Bag_13_B6,Circular 11_Express_Bag_13_PE/PP_Pallet,blue,False,PE,PE,89.0,PE,0.96,5.798095613902702e-06,PE,True
+C11_Exp_Bag_13_C3,Circular 11_Express_Bag_13_PE/PP_Pallet,yellow,False,PE,PE,87.0,PE,0.92,0.00021080216035051933,PE,True
+C11_Exp_Bag_13_C4,Circular 11_Express_Bag_13_PE/PP_Pallet,grey,False,PE,PE,89.0,PE,0.97,7.045556184892061e-05,PE,True
+C11_Exp_Bag_13_C5,Circular 11_Express_Bag_13_PE/PP_Pallet,grey,False,PE,PE,91.0,PE,0.97,0.00012225873277378255,PE,True
+C11_Exp_Bag_13_C6,Circular 11_Express_Bag_13_PE/PP_Pallet,grey,False,PE,PE,90.0,PE,0.97,6.425693369603228e-05,PE,True
+C11_Exp_Bag_13_D1,Circular 11_Express_Bag_13_PE/PP_Pallet,grey,False,PE,PE,93.0,PE,0.98,5.7083835569745124e-05,PE,True
+C11_Exp_Bag_13_D2,Circular 11_Express_Bag_13_PE/PP_Pallet,light brown,False,PE,PE,88.0,PE,0.96,0.00038153223082512016,PE,True
+C11_Exp_Bag_13_D3,Circular 11_Express_Bag_13_PE/PP_Pallet,light brown,False,PE,PE,90.0,PE,0.97,0.00010680659088388642,PE,True
+C11_Exp_Bag_13_D4,Circular 11_Express_Bag_13_PE/PP_Pallet,light brown,False,PE,PE,88.0,PE,0.95,0.004981312480875586,PE,True
+C11_Exp_Bag_17_A1,Circular 11_Express_Bag_17_PE/PP_Pallet,black,True,PE,PE,89.0,PE,0.97,2.6822906269948912e-05,PE,True
+C11_Exp_Bag_17_A2,Circular 11_Express_Bag_17_PE/PP_Pallet,black,True,PE,PE,89.0,PE,0.97,2.4186148114013288e-05,PE,True
+C11_Exp_Bag_17_A3,Circular 11_Express_Bag_17_PE/PP_Pallet,red,False,PE,PE,88.0,PE,0.95,1.6463746789419764e-05,PE,True
+C11_Exp_Bag_17_A5,Circular 11_Express_Bag_17_PE/PP_Pallet,green,False,PE,PE,90.0,PE,0.97,4.550024929751166e-05,PE,True
+C11_Exp_Bag_17_A6,Circular 11_Express_Bag_17_PE/PP_Pallet,green,False,PE,PE,94.0,PE,0.98,1.993716410593374e-05,PE,True
+C11_Exp_Bag_17_B1,Circular 11_Express_Bag_17_PE/PP_Pallet,blue,False,PE,PE,92.0,PE,0.98,5.606011883927494e-06,PE,True
+C11_Exp_Bag_17_B2,Circular 11_Express_Bag_17_PE/PP_Pallet,blue,False,PE,PE,89.0,PE,0.97,1.1193466630377553e-05,PE,True
+C11_Exp_Bag_17_B3,Circular 11_Express_Bag_17_PE/PP_Pallet,yellow,False,PE,PE,89.0,PE,0.96,8.625058439055613e-06,PE,True
+C11_Exp_Bag_17_B4,Circular 11_Express_Bag_17_PE/PP_Pallet,yellow,False,PE,PE,89.0,PE,0.95,0.0008595561835172582,PE,True
+C11_Exp_Bag_17_B5,Circular 11_Express_Bag_17_PE/PP_Pallet,grey,False,PE,PE,91.0,PE,0.97,3.669276164016336e-05,PE,True
+C11_Exp_Bag_17_B6,Circular 11_Express_Bag_17_PE/PP_Pallet,grey,False,PE,PE,91.0,PE,0.98,2.802242859966374e-05,PE,True
+C11_Exp_Bag_17_C1,Circular 11_Express_Bag_17_PE/PP_Pallet,light brown,False,PE,PE,89.0,PE,0.96,7.086853805696975e-05,PE,True
+C11_Exp_Bag_17_C2,Circular 11_Express_Bag_17_PE/PP_Pallet,light brown,False,PE,PE,89.0,PE,0.96,0.0011817258671452475,PE,True
+C11_Exp_Bag_18_A1,Circular 11_Express_Bag_18_PE/PP_Pallet,black,True,PE,PE,96.0,PE,0.98,2.803570960953236e-07,PE,True
+C11_Exp_Bag_18_A2,Circular 11_Express_Bag_18_PE/PP_Pallet,black,True,PE,PE,95.0,PE,0.98,5.113556539117853e-07,PE,True
+C11_Exp_Bag_18_A3,Circular 11_Express_Bag_18_PE/PP_Pallet,red,False,PE,PE,96.0,PE,0.98,4.818006641308118e-07,PE,True
+C11_Exp_Bag_18_A4,Circular 11_Express_Bag_18_PE/PP_Pallet,blue,False,PE,PE,93.0,PE,0.98,1.4832467572993723e-06,PE,True
+C11_Exp_Bag_18_A5,Circular 11_Express_Bag_18_PE/PP_Pallet,blue,False,PE,PE,96.0,PE,0.98,2.007902331928472e-06,PE,True
+C11_Exp_Bag_18_A6,Circular 11_Express_Bag_18_PE/PP_Pallet,light blue,False,PE,PE,96.0,PE,0.98,6.112198518009255e-06,PE,True
+C11_Exp_Bag_18_B1,Circular 11_Express_Bag_18_PE/PP_Pallet,light blue,False,PE,PE,95.0,PE,0.98,4.815498967256314e-06,PE,True
+C11_Exp_Bag_18_B2,Circular 11_Express_Bag_18_PE/PP_Pallet,sky blue,False,PP,PP,81.0,PP,0.82,0.9999941557986618,PP,True
+C11_Exp_Bag_18_B3,Circular 11_Express_Bag_18_PE/PP_Pallet,sky blue,False,PP,PP,79.0,PP,0.83,0.9994878826642652,PP,True
+C11_Exp_Bag_18_B4,Circular 11_Express_Bag_18_PE/PP_Pallet,yellow,False,PE,PE,96.0,PE,0.98,2.965157574254852e-07,PE,True
+C11_Exp_Bag_18_B5,Circular 11_Express_Bag_18_PE/PP_Pallet,yellow,False,PE,PE,94.0,PE,0.98,4.226379222471638e-07,PE,True
+C11_Exp_Bag_18_B6,Circular 11_Express_Bag_18_PE/PP_Pallet,lime green,False,PP,PP,95.0,PP,0.96,0.9999975276611387,PP,True
+C11_Exp_Bag_18_C1,Circular 11_Express_Bag_18_PE/PP_Pallet,lime green,False,PP,PP,95.0,PP,0.97,0.9999995739522971,PP,True
+C11_Exp_Bag_18_C2,Circular 11_Express_Bag_18_PE/PP_Pallet,cream,False,PE,PE,96.0,PE,0.98,1.5486167587607447e-06,PE,True
+C11_Exp_Bag_18_C3,Circular 11_Express_Bag_18_PE/PP_Pallet,cream,False,PE,PE,95.0,PE,0.98,2.239126483749361e-06,PE,True

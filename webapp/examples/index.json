@@ -1,0 +1,72 @@
+[
+  {
+    "file": "Float_PP_A1.dpt",
+    "title": "Float_PP_A1  \u00b7  Black flake (Impact)",
+    "truth": "PP (black)",
+    "lab": [
+      27.41,
+      0.05,
+      -0.38
+    ]
+  },
+  {
+    "file": "C11_Aylesbury_PE_A1.dpt",
+    "title": "C11_Aylesbury_PE_A1  \u00b7  Black flake (Circular 11)",
+    "truth": "PE (black)",
+    "lab": [
+      35.06,
+      0.15,
+      0.19
+    ]
+  },
+  {
+    "file": "Float_PP_A6.dpt",
+    "title": "Float_PP_A6  \u00b7  White flake",
+    "truth": "PP (white)",
+    "lab": [
+      97.35,
+      -0.31,
+      1.49
+    ]
+  },
+  {
+    "file": "Sink_PE_C3.dpt",
+    "title": "Sink_PE_C3  \u00b7  Coloured flake",
+    "truth": "PP (cream)",
+    "lab": [
+      77.65,
+      -0.03,
+      12.91
+    ]
+  },
+  {
+    "file": "Mixed_PO_B2.dpt",
+    "title": "Mixed_PO_B2  \u00b7  Mixed-PO flake",
+    "truth": "PE (dark green)",
+    "lab": [
+      42.92,
+      -5.11,
+      4.03
+    ]
+  },
+  {
+    "file": "C11_Exp_Bag_13_A4.dpt",
+    "title": "C11_Exp_Bag_13_A4  \u00b7  PE/PP blend (ambiguous)",
+    "truth": "PP (red)",
+    "lab": [
+      49.65,
+      38.72,
+      13.85
+    ]
+  },
+  {
+    "file": "C11_Q_Plastic_Bopp_A2.dpt",
+    "title": "C11_Q_Plastic_Bopp_A2  \u00b7  Bopp shred (not PE/PP-clean)",
+    "truth": "Uncertain (white)",
+    "lab": [
+      90.61,
+      -1.27,
+      -1.82
+    ]
+  }
+]

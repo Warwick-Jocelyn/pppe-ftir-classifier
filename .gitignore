@@ -1,0 +1,18 @@
+# environments / caches
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+*.log
+
+# partner data stays on the supervisor machine (not in the repo)
+Dataset/
+
+# generated / large intermediates
+results/cache/
+deploy/
+
+# local helper scripts / scratch
+run_chain*.sh
+EXPERIMENTS.md
